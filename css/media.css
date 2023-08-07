@@ -1,0 +1,55 @@
+/* normal media query */
+/* big screen */
+@media screen and (min-width: 1400px) {
+}
+/* media query should start from big screen to the smallest one in order with max-width */
+/* xl */
+@media screen and (max-width: 1400px) {
+}
+/* l */
+@media screen and (max-width: 1200px) {
+}
+/* m */
+@media screen and (max-width: 991px) {
+  /* nav bar */
+  .navbar-collapse {
+    margin-top: 3rem;
+    background-color: #262936;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  .nav-link {
+    padding: 2rem !important;
+    border: 0;
+    border-radius: 0;
+  }
+  .nav-item:not(:last-child) {
+    margin-right: 0rem;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-link:focus,
+  .nav-link:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .navbar-nav .nav-link.active {
+    color: #009ad8;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .nav-link:active {
+    background-color: #009ad8;
+    color: #fff !important;
+  }
+}
+/* s */
+@media screen and (max-width: 768px) {
+}
+/* xs */
+@media screen and (max-width: 600px) {
+}
+/*----------------------- */
+/*----------------------- */
+/*----------------------- */
+/*----------------------- */
+/*----------------------- */

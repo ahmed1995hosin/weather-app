@@ -1,0 +1,257 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #bfc1c8;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+  background: #1e202b;
+}
+/* nav bar */
+.navbar {
+  --bs-navbar-padding-y: 5rem;
+}
+.logo {
+  width: 6.4rem;
+  display: block;
+  margin-right: 1rem;
+}
+.logo-text h1 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+.logo-text h1 + small {
+  font-size: 1rem;
+  color: #bfc1c8;
+  font-weight: 300;
+}
+.nav-item:not(:last-child) {
+  margin-right: 1rem;
+}
+.nav-link {
+  padding: 0.5rem 2.5rem !important;
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 400;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 3rem;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #009ad8;
+  border-color: #009ad8;
+}
+.navbar-nav .nav-link.active {
+  color: #009ad8;
+  border-color: #009ad8;
+}
+
+.navbar-toggler-icon {
+  background-image: unset;
+  font-size: 2rem;
+  width: auto;
+  height: auto;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+.navbar-toggler {
+  color: #fff;
+  border: 0 !important;
+  border-radius: 4rem !important;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 2px #009ad8 !important;
+  color: #009ad8;
+}
+/* hero */
+.hero {
+  padding: 7rem 0;
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  width: 100%;
+  min-height: 35rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* btn */
+.find-location {
+  margin-bottom: 7rem;
+}
+.find-location input[type="text"],
+.Subscribe-form input[type="email"] {
+  padding: 2rem 5rem 2rem 2rem;
+  font-size: 1.4rem;
+  background-color: rgb(30, 32, 43);
+  border: 0;
+  outline: 0;
+  color: #fff;
+  z-index: 50;
+}
+.main-btn {
+  font-size: 1.5rem;
+  color: #ffff;
+  padding: 0 4rem;
+  background-color: #009ad8;
+  top: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  z-index: 55;
+}
+.btn:active,
+.btn:hover {
+  color: white !important;
+  background-color: #009ad8 !important;
+  border-color: #009ad8 !important;
+}
+/* main section  */
+main {
+  margin-top: -15rem;
+  margin-bottom: 5rem;
+
+  z-index: 2;
+}
+
+footer {
+  background-color: rgb(38, 41, 54);
+  padding: 5rem 0rem;
+}
+.social-media ul li a {
+  display: block;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  color: rgb(0, 154, 216);
+  background-color: rgb(30, 32, 43);
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+}
+.social-media ul li a:hover {
+  color: #fff;
+  background-color: rgb(0, 154, 216);
+}
+.social-media ul li a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+.para {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* main section */
+main .row > * {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+main .row > *:nth-child(2) {
+  background-color: #262936;
+}
+main .row > *:nth-child(3) {
+  background-color: rgb(50, 53, 68);
+}
+/* */
+.bg-dark2 {
+  background-color: #262936;
+}
+.forecastday {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(191, 193, 200);
+}
+.bg-dark1 {
+  background-color: rgb(50, 53, 68);
+}
+.forecastday__header {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.forecastday__body {
+  padding: 3rem 2rem;
+}
+.forecastday__body .location {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.forecastday__body .degree .temp-c {
+  color: #fff;
+  font-weight: 700;
+  font-size: 7rem;
+  margin-right: 3rem;
+}
+.forecastday-icon {
+  width: 9rem;
+}
+.condition {
+  color: #009ad8;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+.forecastday-samples {
+  font-size: 1.5rem;
+}
+.forecastday-samples div {
+  display: flex;
+  align-items: center;
+}
+.forecastday-samples i {
+  font-size: 2rem;
+  margin-right: 0.4rem;
+}
+
+.forecastday__body2 {
+  padding: 5rem 2rem 10rem;
+}
+
+.forecastday__body2 .forecastday-icon img {
+  width: 4.8rem;
+  margin-bottom: 2rem;
+}
+.forecastday__body2 .degree-temp {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 36px;
+  color: #fff;
+}
+.forecastday__body2 .night {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* suggestion search */
+.suggestion-search {
+  padding: 6rem 5rem 2rem 2rem;
+  font-size: 1.4rem;
+  background-color: rgb(30, 32, 43, 0.9);
+  z-index: 30;
+  width: 100%;
+  /*transform: translateY(-50%);
+  */
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: all 0.3s;
+}
+.auto-min-height {
+  height: auto !important;
+}
+
+.suggestion {
+  font-size: 1.4rem;
+  cursor: pointer;
+}

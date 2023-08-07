@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="weather app franco art" />
+    <meta name="keywords" content="weather,rain" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <!-- eng ahmed hosin -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/logo.png" alt="logo" class="logo" />
+          <div class="logo-text">
+            <h1>weather</h1>
+            <small> tagline goes here</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mbs-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">news</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="hero position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form class="find-location position-relative">
+              <input
+                id="findLocation"
+                class="form-control rounded-pill position-relative"
+                type="text"
+                placeholder="Find Your Location..."
+              />
+              <button
+                class="btn main-btn position-absolute rounded-pill d-block"
+                type="button"
+              >
+                Find
+              </button>
+              <div
+                class="suggestion-search position-absolute rounded-5 overflow-hidden opacity-0"
+              >
+                <p class="text-danger mb-0 pt-3">not found!</p>
+                <ul class="list-suges list-unstyled m-0">
+                  <li class="suggestion pt-3">ahmedt</li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="position-relative">
+      <div class="container">
+        <div id="row" class="row rounded-3 overflow-hidden"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row gy-5 mb-5">
+          <div class="col-lg-8">
+            <form class="Subscribe-form position-relative">
+              <input
+                class="form-control rounded-pill"
+                type="email"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button
+                class="btn main-btn position-absolute rounded-pill d-block"
+                type="submit"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div class="offset-lg-1 col-lg-3 d-flex align-items-center">
+            <div class="social-media">
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="para">
+          Copyright 2023 Company franso art All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -22,7 +22,7 @@ findBtn.addEventListener("click", function () {
 // eng ahmed then method
 function callAPISearch(item) {
   fetch(
-    `http://api.weatherapi.com/v1/search.json?key=1b12b41c47674d7d9e2223839230608&q=${item}`
+    `https://api.weatherapi.com/v1/search.json?key=1b12b41c47674d7d9e2223839230608&q=${item}`
   )
     .then(function (response) {
       return response.json();
@@ -73,7 +73,7 @@ function SelectionItemSuggest() {
 async function callAPI(item) {
   try {
     let data = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=1b12b41c47674d7d9e2223839230608&q=${item}&days=3`
+      `https://api.weatherapi.com/v1/forecast.json?key=1b12b41c47674d7d9e2223839230608&q=${item}&days=3`
     );
     data = await data.json();
     displayWeatherToday(data.location, data.current);
